@@ -28,7 +28,7 @@ app.use(logger('combined'));
 
 // https://www.npmjs.com/package/serve-favicon
 // Uncomment after placing your favicon in /public:
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 
 // Set parser to get the body data request
