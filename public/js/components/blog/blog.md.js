@@ -12,6 +12,7 @@ let blogModule = angular.module('app.blog', [])
     .component('blogItem', blogItem)
     .component('blogItemMenu', blogItemMenu)
     .component('blogList', blogList)
+    .component('algo', algo)
     .config(['$stateProvider', ($stateProvider, $urlRouterProvider, $locationProvider) => {
         /*
           Define a state with name 'blog' this state is abstract and url is empty (root of application)
@@ -30,6 +31,10 @@ let blogModule = angular.module('app.blog', [])
             .state('blog.item', {
                 url: '/:id',
                 template: '<blog-item editable="true"></blog-item>'
+            })
+            .state('algo', {
+                url: '/algo',
+                templateUrl: 'js/components/algo/algo.html'
             })
     }])
     .name
